@@ -1,0 +1,163 @@
+/* IMPORT STATEMENTS */
+/* add Import link of google fonts */
+
+/* Georama */
+
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@300&display=swap');
+
+/* noto */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+/* USE VARIABLE TO DEFINE COLOUR   ( This most used in to set dark mode by js) */
+
+/* Define Global variable */
+
+:root{
+    --header-footer-color:#2874f0;  /* -- at starting is must*/
+}
+/* ata ha colour jithe jithe lagel tithe background:var(--header-footer-color) taka */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Style header  */
+
+header{
+    /* height: 11vh; */
+    background-color: var(--header-footer-color);
+    color: white;
+}
+
+nav ul{
+    height: 11vh;
+    display: flex;
+    justify-content: flex-start; /*this flex properties work when add height*/
+    align-items: center;    
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+
+    padding: 0px 25px 0px 20px;
+
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* Hover nav  bold */
+nav ul li a:hover{
+    font-weight: 600;   /* Bold in number*/
+ 
+
+}
+
+/* style logo */
+ nav {                /* to set img inline*/
+    display: flex;
+}
+
+.logo{
+    
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 110px;
+    padding: 0px 15px;
+}
+
+/* style search-bar */
+.search-bar{
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input{
+    height:5vh;
+    width: 40vw;
+
+    /* border-radius: 5px; */
+
+    margin: 0px 20px 0px 30px;  /* Margin search bar chya baherun lagte*/
+    padding: 0px 10px;  /* Padding search bar chya  aat lagte */
+}
+
+
+
+/* style main container */
+
+.container{
+    min-height: calc(100vh - 10vh - 12vh);  /* Use calc function to substraction  10vh is header height & 12vh is footer height*/
+}
+
+.slider{
+    
+    /* display: flex;
+    justify-content: center;   */
+
+    margin: 12px 0px 50px 0px;
+
+    /* ALSO CENTER BY UASING margin and width ( To understand better add background colour ) */
+     margin: auto;
+    width: 80VW; 
+
+    overflow: hidden;  /* To make responsive website*/
+}
+
+.slider img{
+    margin-top: 12px;
+}
+
+.card h2{
+    margin: 20px 0;
+    font-family: 'Georama', sans-serif;
+}
+
+.card{
+    font-family: 'Noto Sans KR', sans-serif;
+
+    /* background-color: royalblue; */
+    width: 90vw;
+    margin: auto;
+
+    overflow: hidden;
+}
+.card-item{
+    /* background-color: red; */
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction:column;
+
+    width: 15vw;
+
+    margin: 0px 13px;
+    
+
+}
+
+
+
+
+
+/* Style Footer */
+
+footer{
+    background-color: var(--header-footer-color);
+    color: white;
+    height: 12vh;
+
+    /* CSS rules to specify families  */
+     font-family: 'Georama', sans-serif;
+}
+
+
+
+                                       
